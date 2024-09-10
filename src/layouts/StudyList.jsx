@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "./layout.css";
+
 const studyData = [
   {
     service: "패션스퀘어_FashionSquare",
@@ -12,18 +14,21 @@ const studyData = [
 
 const StudyList = () => {
   return (
-    <ul className="list__study">
-      {studyData.map((data, index) => {
-        return (
-          <li className="list-item" key={`study_${index}`}>
-            <Link to={data.link}>
-              <p className="text__service">{data.service}</p>
+    <div className="box__index">
+      <p className="text__title">개인 스터디 리스트</p>
+      <ul className="list__index">
+        {studyData.map((data, index) => {
+          return (
+            <li className="list-item" key={`study_${index}`}>
+              <Link to={data.link} className="link__item">
+                <p className="text__service">{data.service}</p>
+              </Link>
               <span className="text__date">{data.date}</span>
-            </Link>
-          </li>
-        );
-      })}
-    </ul>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 };
 

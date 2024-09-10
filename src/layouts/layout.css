@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #222;
+}
+a {
+  text-decoration: none;
+}
+.box__index {
+  max-width: 1200px;
+  margin: 20px auto;
+  .text__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.list__index {
+  border-top: 2px solid #222;
+  .list-item {
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 1px solid #222;
+    justify-content: space-between;
+  }
+}

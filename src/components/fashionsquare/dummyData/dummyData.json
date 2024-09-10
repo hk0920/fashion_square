@@ -1,0 +1,15 @@
+{
+  "Header": {
+    "bgColor": "rgb(88, 85, 226)",
+    "title": {
+      "text": "패션스퀘어",
+      "imageUrl": "//script.gmarket.co.kr/build/mobile/image/single/gnb/logo_fashionsquare_white.png",
+      "linkUrl": "#"
+    },
+    "search": {
+      "isVisible": true
+    },
+    "isBack": true,
+    "isCart": true
+  }
+}
