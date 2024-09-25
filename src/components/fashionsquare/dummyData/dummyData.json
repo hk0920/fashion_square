@@ -11,5 +11,140 @@
     },
     "isBack": true,
     "isCart": true
+  },
+  "ItemCard": {
+    "loading": false,
+    "items": [
+      {
+        "itemNo": "1592761274",
+        "itemName": "(본사30%쿠폰) 플라스틱아일랜드 아울렛상품 아우터/패딩/코트 3만원대~ UP TO 85% 단독특가 진행",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1592761274",
+        "imageUrl": "//gdimg.gmarket.co.kr/1592761274/still/400?ver=1727056536",
+        "sdBrandName": "플라스틱아일랜드",
+        "itemPrice": 141000,
+        "sellPrice": 279000,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "15% 쿠폰"
+          }
+        ],
+        "buyCount": 16971,
+        "reviewPoint": {
+          "starPoint": 4.42,
+          "reviewCount": 3766
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
+        "scode": "300026669",
+        "mcode": "200002670",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": false,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "2344865248",
+        "itemName": "(30%쿠폰) LAP랩 베스트 가을 1만원대 앵콜특가전 자켓/원피스/셔츠",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=2344865248",
+        "imageUrl": "//gdimg.gmarket.co.kr/2344865248/still/400?ver=1727071079",
+        "sdBrandName": "랩",
+        "itemPrice": 47000,
+        "sellPrice": 94000,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "15% 쿠폰"
+          }
+        ],
+        "buyCount": 17321,
+        "reviewPoint": {
+          "starPoint": 4.48,
+          "reviewCount": 5078
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
+        "scode": "300026651",
+        "mcode": "200002667",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": false,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "1667327896",
+        "itemName": "(15%+10%) 온앤온 간절기 아우터/티셔츠/원피스 외 최대 78% 할인",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1667327896",
+        "imageUrl": "//gdimg.gmarket.co.kr/1667327896/still/400?ver=1727062168",
+        "itemPrice": 139330,
+        "sellPrice": 399000,
+        "lmos": ["{lmoString: \"15% 쿠폰\", lmoType: \"COUPON\"}"],
+        "buyCount": 4064,
+        "reviewPoint": {
+          "starPoint": 4.51,
+          "reviewCount": 594
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
+        "scode": "300026671",
+        "mcode": "200002670",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": false,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "1791736282",
+        "itemName": "(10%) 이사베이/비키 시원해진 날씨 간절기에 적합한 니트/블라우스/가디건 특가外",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1791736282",
+        "imageUrl": "//gdimg.gmarket.co.kr/1791736282/still/400?ver=1726807014",
+        "sdBrandName": "베스띠벨리",
+        "itemPrice": 43900,
+        "sellPrice": 86900,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "15% 쿠폰"
+          }
+        ],
+        "buyCount": 10368,
+        "reviewPoint": {
+          "starPoint": 4.44,
+          "reviewCount": 3246
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
+        "hotSignalTitle": "브랜드 여성의류 베스트",
+        "scode": "300026668",
+        "mcode": "200002670",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": false,
+        "isCartVisible": false
+      }
+    ],
+    "totalResultCount": 11233,
+    "currentPageNo": 1,
+    "nextPageNo": 2,
+    "largeCategory": {
+      "categoryNo": "100000000",
+      "categoryName": "여성",
+      "categoryImageUrl": "https://image.gmarket.co.kr/hanbando/202205/38c48989-365b-446a-a6cc-7bf19670cfb0.jpg",
+      "subCategories": null,
+      "isNew": false
+    },
+    "middleCategory": null
   }
 }

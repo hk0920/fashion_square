@@ -98,3 +98,22 @@ export const HeaderComponent = styled.header<{ bgColor: string }>`
     justify-content: center;
   }
 `;
+
+export const ItemThumbnail = styled.div`
+  position: relative;
+  .image {
+    width: 100%;
+  }
+`;
+
+export const ItemCardComponent = styled.a`
+  display: block;
+`;
+
+export const ItemCardWrap = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  ${ItemCardComponent} {
+    width: 50%;
+  }
+`;
