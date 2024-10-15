@@ -5,6 +5,7 @@ import ItemName from "./ItemName";
 import DeliveryInfo from "./DeliveryInfo";
 import ItemScore from "./ItemScore";
 import BenefitTag from "./BenefitTag";
+import { ItemCardInfo } from "../../../styles/ItemcardStyle";
 
 const ItemInformation = ({ data }) => {
   const {
@@ -30,7 +31,7 @@ const ItemInformation = ({ data }) => {
 
   return (
     <div class="box__itemcard-info">
-      <a href={itemUrl} class="link__itemcard-info">
+      <ItemCardInfo href={itemUrl}>
         <span class="box__itemcard-title-area">
           <BrandName
             isFashionSquareSeller={isFashionSquareSeller}
@@ -43,7 +44,7 @@ const ItemInformation = ({ data }) => {
 
         <ItemScore reviewPoint={reviewPoint} buyCount={buyCount} />
         <BenefitTag lmos={lmos} />
-      </a>
+      </ItemCardInfo>
       <button
         type="button"
         class="button__favorite-item"

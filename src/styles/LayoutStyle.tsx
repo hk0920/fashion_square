@@ -3,7 +3,7 @@ import { theme } from "./Theme";
 
 export const GlobalStyle = createGlobalStyle`
 	body, * {
-		font-family:'Montserrat', 'Noto Sans KR', sans-serif;
+		font-family: -apple-system,BlinkMacSystemFont,Apple SD Gothic Neo,Roboto,Noto Sans CJK KR,Tahoma,"Noto Sans KR",sans-serif;
 		color:${theme.colors.textColor};
 		box-sizing:border-box;
 
@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 		color:${theme.colors.pointColor};
 	}
 	.box__inner {
-		width:768px;
+		max-width:768px;
 		margin:0 auto;
 
 		@media all and ${theme.device.mobile}{
@@ -74,6 +74,12 @@ export const HeaderComponent = styled.header<{ bgColor: string }>`
     position: relative;
   }
 
+  .link__logo{
+    padding: 12px 0;
+    font-size: 0;
+    line-height: 0;
+  }
+
   ${BackButton} {
     position: absolute;
     top: 0;
@@ -96,24 +102,5 @@ export const HeaderComponent = styled.header<{ bgColor: string }>`
     height: 48px;
     align-items: center;
     justify-content: center;
-  }
-`;
-
-export const ItemThumbnail = styled.div`
-  position: relative;
-  .image {
-    width: 100%;
-  }
-`;
-
-export const ItemCardComponent = styled.a`
-  display: block;
-`;
-
-export const ItemCardWrap = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  ${ItemCardComponent} {
-    width: 50%;
   }
 `;

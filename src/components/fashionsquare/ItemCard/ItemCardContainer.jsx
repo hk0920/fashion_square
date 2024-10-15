@@ -1,6 +1,6 @@
 import React from "react";
 import ItemCard from ".";
-import { ItemCardWrap } from "../../../styles/LayoutStyle";
+import { ItemCardWrap } from "../../../styles/ItemcardStyle";
 
 const ItemCardContainer = ({ data }) => {
   return (

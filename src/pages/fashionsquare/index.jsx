@@ -9,7 +9,7 @@ const FashionSquarePage = () => {
   return (
     <>
       <Header data={dummyData.Header} />
-      <Filter />
+      <Filter data={dummyData.Filter}/>
       <ItemCardContainer data={dummyData.ItemCard} />
     </>
   );

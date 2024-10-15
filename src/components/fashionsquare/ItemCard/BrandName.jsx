@@ -1,8 +1,9 @@
 import React from "react";
+import { BrandTitle } from "../../../styles/ItemcardStyle";
 
 const BrandName = ({ isFashionSquareSeller, sdBrandName }) => {
   return (
-    <span class="text__brand">
+    <BrandTitle>
       {isFashionSquareSeller && (
         <span class="box__itemcard-fashion-tag">
           <img
@@ -13,7 +14,7 @@ const BrandName = ({ isFashionSquareSeller, sdBrandName }) => {
         </span>
       )}
       <span class="text">{sdBrandName}</span>
-    </span>
+    </BrandTitle>
   );
 };
 

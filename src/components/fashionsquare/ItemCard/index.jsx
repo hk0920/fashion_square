@@ -1,7 +1,7 @@
 import React from "react";
 import ItemImage from "./ItemImage";
 import ItemInformation from "./ItemInformation";
-import { ItemCardComponent } from "../../../styles/LayoutStyle";
+import { ItemCardComponent } from "../../../styles/ItemcardStyle";
 
 const ItemCard = ({ data }) => {
   const {

@@ -1,10 +1,11 @@
 import React from "react";
+import { DeliveryElement } from "../../../styles/ItemcardStyle";
 
 const DeliveryInfo = ({ deliveryText }) => {
   return (
-    <div class="box__itemcard-delivery">
+    <DeliveryElement>
       <span class="text__delivery">{deliveryText}</span>
-    </div>
+    </DeliveryElement>
   );
 };
 

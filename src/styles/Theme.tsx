@@ -11,8 +11,9 @@ export const theme: DefaultTheme = {
     textColor: "#424242",
     pointColor: "#5855E2 ",
   },
+  maxWidth:`${deviceSize.mobile}`,
   device: {
-    mobile: `(max-width:${deviceSize.mobile})`,
+    mobile: `(min-width:${deviceSize.mobile})`,
     desktop: `(max-width:${deviceSize.desktop})`,
   },
 };
