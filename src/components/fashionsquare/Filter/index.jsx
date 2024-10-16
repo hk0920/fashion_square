@@ -61,7 +61,6 @@ const Filter = ({ data }) => {
 
   const closeLayer = () => {
     setIsCategoryLayer(false);
-    console.log("??");
   };
 
   return (
@@ -90,7 +89,9 @@ const Filter = ({ data }) => {
             />
           </FilterList>
         )}
-        <CategoryLayer categoriesList={categories} closeLayer={closeLayer} />
+        {isCategoryLayer && (
+          <CategoryLayer categoriesList={categories} closeLayer={closeLayer} />
+        )}
       </CategoryFilter>
       <SortFilter />
     </>
