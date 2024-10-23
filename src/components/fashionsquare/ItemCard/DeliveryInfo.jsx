@@ -4,7 +4,7 @@ import { DeliveryElement } from "../../../styles/ItemcardStyle";
 const DeliveryInfo = ({ deliveryText }) => {
   return (
     <DeliveryElement>
-      <span class="text__delivery">{deliveryText}</span>
+      <span className="text__delivery">{deliveryText}</span>
     </DeliveryElement>
   );
 };

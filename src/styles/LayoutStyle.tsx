@@ -40,19 +40,24 @@ const buttonSizeStyle = css`
   display: block;
   width: 48px;
   height: 48px;
-  border: 1px solid red;
+  background-image: url(${theme.sprite.gnbImage});
+  background-repeat: no-repeat;
+  background-size: ${theme.sprite.gnbSize};
 `;
 
 export const BackButton = styled.button`
   ${buttonSizeStyle}
+  background-position: -208px -150px;
 `;
 
 export const SearchButton = styled.button`
   ${buttonSizeStyle}
+  background-position: 0px -208px;
 `;
 
 export const CartButton = styled.a`
-  ${buttonSizeStyle}
+  ${buttonSizeStyle};
+  background-position: -50px -208px;
 `;
 
 export const Heading = styled.h1`
@@ -74,7 +79,7 @@ export const HeaderComponent = styled.header<{ bgColor: string }>`
     position: relative;
   }
 
-  .link__logo{
+  .link__logo {
     padding: 12px 0;
     font-size: 0;
     line-height: 0;

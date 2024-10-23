@@ -8,7 +8,7 @@ import {
 } from "../../../styles/LayoutStyle";
 
 const Header = ({ data }) => {
-  const { bgColor, title, search, isBack, isCart } = data || {};
+  const { bgColor = "transparent", title, search, isBack, isCart } = data || {};
   return (
     <HeaderComponent bgColor={bgColor}>
       <div className="box__inner">

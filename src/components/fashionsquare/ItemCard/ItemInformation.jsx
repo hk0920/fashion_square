@@ -30,9 +30,9 @@ const ItemInformation = ({ data }) => {
   } = data || {};
 
   return (
-    <div class="box__itemcard-info">
+    <div className="box__itemcard-info">
       <ItemCardInfo href={itemUrl}>
-        <span class="box__itemcard-title-area">
+        <span className="box__itemcard-title-area">
           <BrandName
             isFashionSquareSeller={isFashionSquareSeller}
             sdBrandName={sdBrandName}
@@ -47,11 +47,11 @@ const ItemInformation = ({ data }) => {
       </ItemCardInfo>
       <button
         type="button"
-        class="button__favorite-item"
+        className="button__favorite-item"
         aria-describedby="itemCard_title_3285788852"
         aria-pressed="false"
       >
-        <span class="for-a11y">관심상품 등록하기</span>
+        <span className="for-a11y">관심상품 등록하기</span>
       </button>
     </div>
   );

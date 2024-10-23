@@ -35,6 +35,7 @@ export const FilterList = styled.ul<{ depth: number }>`
   overflow-x: auto;
   white-space: nowrap;
   background: #fff;
+  border-top: ${(props) => props.depth === 2 && "1px solid #dedede"};
   &::-webkit-scrollbar {
     display: none;
   }
@@ -46,6 +47,7 @@ export const FilterList = styled.ul<{ depth: number }>`
     display: block;
     padding: ${(props) => (props.depth === 1 ? "15px 0" : "0 8px")};
     text-align: ${(props) => props.depth === 1 && "center"};
+    line-height: ${(props) => (props.depth === 1 ? 1 : "40px")};
   }
   .box__thumbnail {
     display: block;
@@ -90,7 +92,19 @@ export const CategoryFilter = styled.div`
         width: 48px;
         height: 48px;
         margin: 0 auto;
-        border: 1px solid red;
+        background-image: url(${theme.sprite.fashionImage});
+        background-size: ${theme.sprite.fashionSize};
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        display: block;
+        width: 1px;
+        height: 69px;
+        background: rgba(0, 0, 0, 0.1);
+        transform: translateY(-50%);
       }
     }
   }
@@ -117,8 +131,10 @@ export const Layer = styled.div<{ name: string }>`
       left: 14px;
       width: 46px;
       height: 46px;
-      border: 1px solid purple;
       border-radius: 50%;
+      background-image: url(${theme.sprite.fashionImage});
+      background-size: ${theme.sprite.fashionSize};
+      background-position: 0px -50px;
     }
   }
   ${FilterList} {
@@ -140,6 +156,7 @@ export const Layer = styled.div<{ name: string }>`
       display: inline-block;
       width: 34px;
       height: 34px;
+      margin-right: 10px;
       vertical-align: top;
     }
     .text__title {

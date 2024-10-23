@@ -2,7 +2,11 @@ import React from "react";
 
 const ItemName = ({ itemNo, itemName }) => {
   return (
-    <span class="text__title" id={`itemCard_title_${itemNo}`} title={itemName}>
+    <span
+      className="text__title"
+      id={`itemCard_title_${itemNo}`}
+      title={itemName}
+    >
       {itemName}
     </span>
   );

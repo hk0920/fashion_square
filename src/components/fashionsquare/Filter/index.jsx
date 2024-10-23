@@ -3,6 +3,7 @@ import { CategoryFilter, FilterList } from "../../../styles/FilterStyle";
 import Tabs from "./Tabs";
 import SortFilter from "./SortFilter";
 import CategoryLayer from "./CategoryLayer";
+import classNames from "classnames";
 
 const RenderList = ({ data }) => {
   return (
@@ -78,7 +79,11 @@ const Filter = ({ data }) => {
             카테고리
           </button>
           <FilterList depth={1}>
-            <RenderList data={categories} categoryControl={categoryControl} />
+            <RenderList
+              data={categories}
+              categoryControl={categoryControl}
+              selectNo={currentcategoryNo}
+            />
           </FilterList>
         </div>
         {categories[categoryIndex.oneDepth].subCategories.length > 0 && (
