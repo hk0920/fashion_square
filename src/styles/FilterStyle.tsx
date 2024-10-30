@@ -2,8 +2,10 @@ import styled, { css } from "styled-components";
 import { theme } from "./Theme";
 
 export const Tab = styled.div`
-  display: flex;
   border-bottom: 1px solid #eeeeee;
+  .box__inner {
+    display: flex;
+  }
   .button__tab {
     flex: 1;
     font-family: "Gmarket Sans";
@@ -31,6 +33,7 @@ export const FilterList = styled.ul<{ depth: number }>`
   position: relative;
   max-width: ${theme.maxWidth};
   margin: 0 auto;
+  margin-left: ${(props) => props.depth === 1 && "74px"};
   padding: 0 4px;
   overflow-x: auto;
   white-space: nowrap;
@@ -75,9 +78,10 @@ export const CategoryFilter = styled.div`
   padding: 8px 0;
   background-color: #f5f5f5;
   .box__category-filter {
-    position: relative;
-    padding-left: 74px;
     background: #fff;
+    .box__inner {
+      position: relative;
+    }
     .button__category {
       position: absolute;
       top: 0;

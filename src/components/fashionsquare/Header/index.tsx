@@ -7,7 +7,24 @@ import {
   SearchButton,
 } from "../../../styles/LayoutStyle";
 
-const Header = ({ data }) => {
+interface dataType {
+  bgColor?: string;
+  title?: {
+    text: string;
+    imageUrl: string;
+    linkUrl: string;
+  };
+  search?: {
+    isVisible: boolean;
+  };
+  isBack: boolean;
+  isCart: boolean;
+}
+interface HeaderProps {
+  data: dataType;
+}
+
+const Header = ({ data }: HeaderProps) => {
   const { bgColor = "transparent", title, search, isBack, isCart } = data || {};
   return (
     <HeaderComponent bgColor={bgColor}>
