@@ -28,7 +28,7 @@ interface CategoryItemProps {
   selectNo?: string;
 }
 
-const RenderList = ({ data }: CategoryItemProps) => {
+const RenderList = ({ data , categoryControl}: CategoryItemProps) => {
   return (
     <>
       {data.map((item: any, idx: number) => {
@@ -42,7 +42,7 @@ const RenderList = ({ data }: CategoryItemProps) => {
 
         return (
           <li className="list-item" key={`category-${categoryNo}`}>
-            <a href="#" className="link__category">
+            <a href="#" className="link__category" onClick={()=>categoryControl(0,1)}>
               {categoryImageUrl && (
                 <span className="box__thumbnail">
                   <img src={categoryImageUrl} alt="전체" className="image" />

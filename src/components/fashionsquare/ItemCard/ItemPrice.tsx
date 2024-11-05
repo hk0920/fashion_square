@@ -1,7 +1,7 @@
 import React from "react";
 import { PriceComponent } from "../../../styles/ItemcardStyle";
 
-const ItemPrice = ({ itemPrice, sellPrice }) => {
+const ItemPrice = ({ itemPrice, sellPrice } : { itemPrice:number, sellPrice:number }) => {
   return (
     <PriceComponent>
       <span className="box__price-seller">

@@ -1,7 +1,12 @@
 import React from "react";
 import { BrandTitle } from "../../../styles/ItemcardStyle";
 
-const BrandName = ({ isFashionSquareSeller, sdBrandName }) => {
+interface NameProps {
+  isFashionSquareSeller: boolean;
+  sdBrandName: string;
+}
+
+const BrandName = ({ isFashionSquareSeller, sdBrandName } : NameProps) => {
   return (
     <BrandTitle>
       {isFashionSquareSeller && (

@@ -16,54 +16,62 @@
     "loading": false,
     "items": [
       {
-        "itemNo": "1592761274",
-        "itemName": "(본사30%쿠폰) 플라스틱아일랜드 아울렛상품 아우터/패딩/코트 3만원대~ UP TO 85% 단독특가 진행",
-        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1592761274",
-        "imageUrl": "//gdimg.gmarket.co.kr/1592761274/still/400?ver=1727056536",
-        "sdBrandName": "플라스틱아일랜드",
-        "itemPrice": 141000,
-        "sellPrice": 279000,
+        "itemNo": "1442434454",
+        "itemName": "에고이스트 본사 직영 성해은PICK 코트/패딩/니트 단독가전",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1442434454",
+        "imageUrl": "//gdimg.gmarket.co.kr/1442434454/still/400?ver=1730442096",
+        "sdBrandName": "에고이스트",
+        "itemPrice": 200000,
+        "sellPrice": 666000,
         "lmos": [
           {
             "lmoType": "COUPON",
-            "lmoString": "15% 쿠폰"
+            "lmoString": "25% 쿠폰"
+          },
+          {
+            "lmoType": "EXTRA_DISCOUNT",
+            "lmoString": "결제할인 7%"
           }
         ],
-        "buyCount": 16971,
+        "buyCount": 17938,
         "reviewPoint": {
-          "starPoint": 4.42,
-          "reviewCount": 3766
+          "starPoint": 4.55,
+          "reviewCount": 1983
         },
         "groupItemCnt": 0,
         "groupNo": 0,
         "deliveryText": "무료배송",
-        "scode": "300026669",
-        "mcode": "200002670",
+        "scode": "300026661",
+        "mcode": "200002669",
         "lcode": "100000103",
         "isFashionSquareSeller": true,
         "isLmoOfficialSeller": false,
         "isAdult": false,
-        "isBigSmileItem": false,
+        "isBigSmileItem": true,
         "isCartVisible": false
       },
       {
         "itemNo": "2344865248",
-        "itemName": "(30%쿠폰) LAP랩 베스트 가을 1만원대 앵콜특가전 자켓/원피스/셔츠",
+        "itemName": "(10%+25%쿠폰) LAP랩 가을겨울 인기 1만원대 최종특가전 자켓/원피스/셔츠",
         "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=2344865248",
-        "imageUrl": "//gdimg.gmarket.co.kr/2344865248/still/400?ver=1727071079",
+        "imageUrl": "//gdimg.gmarket.co.kr/2344865248/still/400?ver=1730358527",
         "sdBrandName": "랩",
-        "itemPrice": 47000,
-        "sellPrice": 94000,
+        "itemPrice": 39000,
+        "sellPrice": 130000,
         "lmos": [
           {
             "lmoType": "COUPON",
-            "lmoString": "15% 쿠폰"
+            "lmoString": "25% 쿠폰"
+          },
+          {
+            "lmoType": "EXTRA_DISCOUNT",
+            "lmoString": "결제할인 7%"
           }
         ],
-        "buyCount": 17321,
+        "buyCount": 18057,
         "reviewPoint": {
-          "starPoint": 4.48,
-          "reviewCount": 5078
+          "starPoint": 4.47,
+          "reviewCount": 4956
         },
         "groupItemCnt": 0,
         "groupNo": 0,
@@ -74,64 +82,337 @@
         "isFashionSquareSeller": true,
         "isLmoOfficialSeller": false,
         "isAdult": false,
-        "isBigSmileItem": false,
+        "isBigSmileItem": true,
         "isCartVisible": false
       },
       {
-        "itemNo": "1667327896",
-        "itemName": "(15%+10%) 온앤온 간절기 아우터/티셔츠/원피스 외 최대 78% 할인",
-        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1667327896",
-        "imageUrl": "//gdimg.gmarket.co.kr/1667327896/still/400?ver=1727062168",
-        "itemPrice": 139330,
-        "sellPrice": 399000,
-        "lmos": ["{lmoString: \"15% 쿠폰\", lmoType: \"COUPON\"}"],
-        "buyCount": 4064,
-        "reviewPoint": {
-          "starPoint": 4.51,
-          "reviewCount": 594
-        },
-        "groupItemCnt": 0,
-        "groupNo": 0,
-        "deliveryText": "무료배송",
-        "scode": "300026671",
-        "mcode": "200002670",
-        "lcode": "100000103",
-        "isFashionSquareSeller": true,
-        "isLmoOfficialSeller": false,
-        "isAdult": false,
-        "isBigSmileItem": false,
-        "isCartVisible": false
-      },
-      {
-        "itemNo": "1791736282",
-        "itemName": "(10%) 이사베이/비키 시원해진 날씨 간절기에 적합한 니트/블라우스/가디건 특가外",
-        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1791736282",
-        "imageUrl": "//gdimg.gmarket.co.kr/1791736282/still/400?ver=1726807014",
+        "itemNo": "1791730168",
+        "itemName": "(10%) 이사베이/비키 일상 속 가을 찾기 데일리 니트/블라우스/스커트 특가 外",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1791730168",
+        "imageUrl": "//gdimg.gmarket.co.kr/1791730168/still/400?ver=1730687124",
         "sdBrandName": "베스띠벨리",
-        "itemPrice": 43900,
-        "sellPrice": 86900,
+        "itemPrice": 34900,
+        "sellPrice": 116200,
         "lmos": [
           {
             "lmoType": "COUPON",
             "lmoString": "15% 쿠폰"
+          },
+          {
+            "lmoType": "EXTRA_DISCOUNT",
+            "lmoString": "결제할인 7%"
           }
         ],
-        "buyCount": 10368,
+        "buyCount": 27727,
         "reviewPoint": {
-          "starPoint": 4.44,
-          "reviewCount": 3246
+          "starPoint": 4.43,
+          "reviewCount": 3439
         },
         "groupItemCnt": 0,
         "groupNo": 0,
         "deliveryText": "무료배송",
-        "hotSignalTitle": "브랜드 여성의류 베스트",
+        "scode": "300026651",
+        "mcode": "200002667",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": true,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "2320985021",
+        "itemName": "(20+10%) 헤지스 여성 BEST 티셔츠/셔츠/블라우스/가디건/자켓 외 4만원대~ +무배",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=2320985021",
+        "imageUrl": "//gdimg.gmarket.co.kr/2320985021/still/400?ver=1730336525",
+        "sdBrandName": "헤지스레이디스",
+        "itemPrice": 90300,
+        "sellPrice": 301000,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "20% 쿠폰"
+          }
+        ],
+        "buyCount": 1445,
+        "reviewPoint": {
+          "starPoint": 4.59,
+          "reviewCount": 537
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
+        "scode": "300026660",
+        "mcode": "200002669",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": true,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "1921216254",
+        "itemName": "본사30%쿠폰 플라스틱아일랜드 아울렛 상품 10월 마지막 특가 아우터 최대 84% 할인 놓치면 품절",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1921216254",
+        "imageUrl": "//gdimg.gmarket.co.kr/1921216254/still/400?ver=1730778189",
+        "sdBrandName": "플라스틱아일랜드",
+        "itemPrice": 80000,
+        "sellPrice": 265000,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "25% 쿠폰"
+          },
+          {
+            "lmoType": "EXTRA_DISCOUNT",
+            "lmoString": "결제할인 7%"
+          }
+        ],
+        "buyCount": 19670,
+        "reviewPoint": {
+          "starPoint": 4.44,
+          "reviewCount": 1585
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
+        "scode": "300026651",
+        "mcode": "200002667",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": true,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "1791736282",
+        "itemName": "(10%) 이사베이/비키 가을 감도있는 코디 니트/블라우스/가디건 外",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1791736282",
+        "imageUrl": "//gdimg.gmarket.co.kr/1791736282/still/400?ver=1730181421",
+        "sdBrandName": "베스띠벨리",
+        "itemPrice": 36900,
+        "sellPrice": 122800,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "15% 쿠폰"
+          },
+          {
+            "lmoType": "EXTRA_DISCOUNT",
+            "lmoString": "결제할인 7%"
+          }
+        ],
+        "buyCount": 10584,
+        "reviewPoint": {
+          "starPoint": 4.44,
+          "reviewCount": 3012
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
         "scode": "300026668",
         "mcode": "200002670",
         "lcode": "100000103",
         "isFashionSquareSeller": true,
         "isLmoOfficialSeller": false,
         "isAdult": false,
-        "isBigSmileItem": false,
+        "isBigSmileItem": true,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "4188665243",
+        "itemName": "여성) ON AIR 수퍼웜 립 터틀넥 긴팔티_MSD4US2204",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=4188665243",
+        "imageUrl": "//gdimg.gmarket.co.kr/4188665243/still/400?ver=1730357425",
+        "sdBrandName": "탑텐",
+        "itemPrice": 9900,
+        "sellPrice": 29900,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "10% 쿠폰"
+          }
+        ],
+        "buyCount": 65,
+        "reviewPoint": {
+          "starPoint": 5,
+          "reviewCount": 3
+        },
+        "groupItemCnt": 50,
+        "groupNo": 45678127,
+        "deliveryText": "무료배송",
+        "scode": "300026654",
+        "mcode": "200002667",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": true,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "1592761274",
+        "itemName": "본사30%쿠폰 플라스틱아일랜드 FW 아울렛 BEST상품 가디건/니트 1만원대~ UP TO 84% OFF",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1592761274",
+        "imageUrl": "//gdimg.gmarket.co.kr/1592761274/still/400?ver=1730691473",
+        "sdBrandName": "플라스틱아일랜드",
+        "itemPrice": 80000,
+        "sellPrice": 265000,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "25% 쿠폰"
+          },
+          {
+            "lmoType": "EXTRA_DISCOUNT",
+            "lmoString": "결제할인 7%"
+          }
+        ],
+        "buyCount": 17317,
+        "reviewPoint": {
+          "starPoint": 4.41,
+          "reviewCount": 3953
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
+        "scode": "300026669",
+        "mcode": "200002670",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": true,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "1565943195",
+        "itemName": "겨울은 역시 에고이스트 성해은 PICK FW 신상 인기템/패딩/코트 놓치면 품절",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1565943195",
+        "imageUrl": "//gdimg.gmarket.co.kr/1565943195/still/400?ver=1730785978",
+        "sdBrandName": "에고이스트",
+        "itemPrice": 200000,
+        "sellPrice": 666000,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "25% 쿠폰"
+          },
+          {
+            "lmoType": "EXTRA_DISCOUNT",
+            "lmoString": "결제할인 7%"
+          }
+        ],
+        "buyCount": 3018,
+        "reviewPoint": {
+          "starPoint": 4.53,
+          "reviewCount": 880
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
+        "scode": "300026634",
+        "mcode": "200002662",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": true,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "4188676088",
+        "itemName": "여성) 플리스 그래픽 스웨트셔츠_MSD4TR2902",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=4188676088",
+        "imageUrl": "//gdimg.gmarket.co.kr/4188676088/still/400?ver=1730787376",
+        "sdBrandName": "탑텐",
+        "itemPrice": 12900,
+        "sellPrice": 39900,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "10% 쿠폰"
+          }
+        ],
+        "buyCount": 41,
+        "reviewPoint": {
+          "starPoint": 5,
+          "reviewCount": 8
+        },
+        "groupItemCnt": 50,
+        "groupNo": 45678127,
+        "deliveryText": "무료배송",
+        "scode": "300026660",
+        "mcode": "200002669",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": true,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "4188672354",
+        "itemName": "여성) ON AIR 모이스처웜 터틀넥 긴팔티 (10부)_MSD4US2205",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=4188672354",
+        "imageUrl": "//gdimg.gmarket.co.kr/4188672354/still/400?ver=1730788307",
+        "sdBrandName": "탑텐",
+        "itemPrice": 7900,
+        "sellPrice": 14900,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "10% 쿠폰"
+          }
+        ],
+        "buyCount": 77,
+        "reviewPoint": {
+          "starPoint": 5,
+          "reviewCount": 6
+        },
+        "groupItemCnt": 50,
+        "groupNo": 45678127,
+        "deliveryText": "무료배송",
+        "scode": "300026660",
+        "mcode": "200002669",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": true,
+        "isCartVisible": false
+      },
+      {
+        "itemNo": "1925003567",
+        "itemName": "(10%+10%) 온앤온 겨울준비 코트/패딩/니트웨어 외 최대 76% 할인",
+        "itemUrl": "https://mitem.gmarket.co.kr/Item?goodscode=1925003567",
+        "imageUrl": "//gdimg.gmarket.co.kr/1925003567/still/400?ver=1730422054",
+        "sdBrandName": "온앤온",
+        "itemPrice": 248720,
+        "sellPrice": 499000,
+        "lmos": [
+          {
+            "lmoType": "COUPON",
+            "lmoString": "15% 쿠폰"
+          }
+        ],
+        "buyCount": 3412,
+        "reviewPoint": {
+          "starPoint": 4.57,
+          "reviewCount": 474
+        },
+        "groupItemCnt": 0,
+        "groupNo": 0,
+        "deliveryText": "무료배송",
+        "scode": "300026635",
+        "mcode": "200002663",
+        "lcode": "100000103",
+        "isFashionSquareSeller": true,
+        "isLmoOfficialSeller": false,
+        "isAdult": false,
+        "isBigSmileItem": true,
         "isCartVisible": false
       }
     ],

@@ -2,8 +2,34 @@ import React from "react";
 import ItemImage from "./ItemImage";
 import ItemInformation from "./ItemInformation";
 import { ItemCardComponent } from "../../../styles/ItemcardStyle";
+import { LmoTag } from "./BenefitTag";
+import { ReviewType } from "./ItemScore";
 
-const ItemCard = ({ data }) => {
+export interface ItemType {
+  itemNo:string;
+  itemName:string;
+  itemUrl:string;
+  imageUrl:string;
+  sdBrandName:string;
+  itemPrice:number;
+  sellPrice:number;
+  lmos: LmoTag[];
+  buyCount:number;
+  reviewPoint: ReviewType;
+  groupItemCnt:number;
+  groupNo:number;
+  deliveryText:string;
+  scode:string;
+  mcode:string;
+  lcode:string;
+  isFashionSquareSeller:boolean;
+  isLmoOfficialSeller:boolean;
+  isAdult:boolean;
+  isBigSmileItem:boolean;
+  isCartVisible:boolean;
+}
+
+const ItemCard = ({ data }:{data: ItemType}) => {
   const {
     itemNo,
     itemName,

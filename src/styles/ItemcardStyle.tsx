@@ -64,20 +64,105 @@ export const PriceComponent = styled.div`
 `
 
 export const DeliveryElement = styled.div`
+  .text__delivery{
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+  }
+`
+export const ScoreElement = styled.div`
   display: block;
-  margin-right: -34px;
+  line-height: 14px;
+  color: #757575;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  .box__score-awards,
+  .box__score-buycnt {
+    position: relative;
+    font-size: 12px;
+    color: #757575;
+    vertical-align: top;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url(${theme.sprite.fashionImage});
+      background-repeat: no-repeat;
+      background-size: ${theme.sprite.fashionSize};
+      background-position: -79px -76px;
+      vertical-align: top;
+    }  
+    .text__score {
+      color:#222;
+    }
+    .text__num,
+    .text{
+      color: #757575;
+    }
+  }
+  .box__score-buycnt {
+    font-size: 12px;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 2px;
+      margin: 6px 2px;
+      vertical-align: top;
+      border-radius: 50%;
+      background-color: #bdbdbd;
+    }
+  }
+}
+`
+export const LmoTag = styled.span<{ lmoType: string }>`
+  display: inline-block;
+  max-width: 100%;
+  padding: 0 6px;
   font-size: 12px;
   line-height: 18px;
-  color: #000;
+  color: #222;
+  border-radius: 10px;
+  border: solid 1px #e0e0e0;
+  background-color: #fff;
+  vertical-align: top;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    vertical-align: top;
+    background-image: url(${theme.sprite.fashionImage});
+    background-repeat: no-repeat;
+    background-position: ${(props)=> props.lmoType === "COUPON"? "-144.3px -98px" : props.lmoType === "GIFT"?"-162.3px -98px" :" -146px -124px"};
+    background-size: ${theme.sprite.fashionSize}
+  }
+`;
+export const LmoTagsElement = styled.div`
+  margin-top: 2px;
+  ${LmoTag}{
+    margin: 4px 4px 0 0;
+  }
 `
 
-export const ItemCardComponent = styled.div`
+export const ItemCardComponent = styled.a`
   display: block;
 `;
 
 export const ItemCardInfo = styled.a`
   display:block;
-  padding:12px 46px 12px 12px;
+  padding:12px;
+  .box__itemcard-title-area{
+    display:block;
+    padding-right:46px;
+  }
 
   .text__title{
     overflow: hidden;

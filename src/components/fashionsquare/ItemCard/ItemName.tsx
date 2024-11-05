@@ -1,6 +1,11 @@
 import React from "react";
 
-const ItemName = ({ itemNo, itemName }) => {
+interface NameType{
+  itemNo:string;
+  itemName:string;
+}
+
+const ItemName = ({ itemNo, itemName }: NameType) => {
   return (
     <span
       className="text__title"

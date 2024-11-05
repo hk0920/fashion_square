@@ -1,7 +1,13 @@
 import React from "react";
 import { ItemThumbnail } from "../../../styles/ItemcardStyle";
 
-const ItemImage = ({ data }) => {
+interface ImageType{
+  imageUrl:string;
+  isAdult:boolean;
+  isBigSmileItem:boolean
+}
+
+const ItemImage = ({ data } : {data:ImageType}) => {
   const { imageUrl, isAdult, isBigSmileItem } = data || {};
   return (
     <ItemThumbnail className="box__thumbnail">

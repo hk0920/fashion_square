@@ -6,8 +6,9 @@ import DeliveryInfo from "./DeliveryInfo";
 import ItemScore from "./ItemScore";
 import BenefitTag from "./BenefitTag";
 import { ItemCardInfo } from "../../../styles/ItemcardStyle";
+import { ItemType } from ".";
 
-const ItemInformation = ({ data }) => {
+const ItemInformation = ({ data }:{data:ItemType}) => {
   const {
     itemNo,
     itemName,
