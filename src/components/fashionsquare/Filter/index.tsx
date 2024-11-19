@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { CategoryFilter, FilterList } from "../../../styles/FilterStyle";
+import { CategoryFilterWrap, FilterList } from "../../../styles/FilterStyle";
 import Tabs from "./Tabs";
 import SortFilter from "./SortFilter";
 import CategoryLayer from "./CategoryLayer";
+import CategoryFilter from "./CategoryFilter";
 
 interface CategoryType {
   categoryNo: string;
@@ -87,48 +88,15 @@ const Filter = ({ data }: FilterProps) => {
     });
   };
 
-  const closeLayer = () => {
-    setIsCategoryLayer(false);
+  const categoryLayerControl = (active:boolean) => {
+    console.log(active)
+    setIsCategoryLayer(active);
   };
 
   return (
     <>
       <Tabs tabType={tabType} tabControl={tabControl} />
-      <CategoryFilter role="navigation">
-        <h3 className="for-a11y">{title}</h3>
-        <div className="box__category-filter">
-          <div className="box__inner">
-            <button
-              type="button"
-              className="button__category"
-              aria-haspopup="dialog"
-              onClick={() => setIsCategoryLayer(true)}
-            >
-              카테고리
-            </button>
-            <FilterList depth={1}>
-              <RenderList
-                data={categories}
-                categoryControl={categoryControl}
-                selectNo={currentcategoryNo}
-              />
-            </FilterList>
-          </div>
-          <div className="box__inner">
-            {categories[categoryIndex.oneDepth].subCategories.length > 0 && (
-              <FilterList depth={2}>
-                <RenderList
-                  data={categories[categoryIndex.oneDepth].subCategories}
-                  categoryControl={categoryControl}
-                />
-              </FilterList>
-            )}
-          </div>
-        </div>
-        {isCategoryLayer && (
-          <CategoryLayer categoriesList={categories} closeLayer={closeLayer} />
-        )}
-      </CategoryFilter>
+      <CategoryFilter data={data} categoryControl={categoryControl} categoryLayerControl={categoryLayerControl} isCategoryLayer={isCategoryLayer} categoryIndex={categoryIndex}/>
       <SortFilter />
     </>
   );

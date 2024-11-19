@@ -74,7 +74,7 @@ export const FilterList = styled.ul<{ depth: number }>`
   }
 `;
 
-export const CategoryFilter = styled.div`
+export const CategoryFilterWrap = styled.div`
   padding: 8px 0;
   background-color: #f5f5f5;
   .box__category-filter {
@@ -169,4 +169,8 @@ export const Layer = styled.div<{ name: string }>`
       vertical-align: top;
     }
   }
+`;
+
+export const SortFilter = styled.div`
+
 `;

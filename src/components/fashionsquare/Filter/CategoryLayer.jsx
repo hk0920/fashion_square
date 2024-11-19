@@ -6,7 +6,7 @@ const CategoryLayer = ({ categoriesList, closeLayer }) => {
     <Layer name={"category"}>
       <div className="box__layer-head">
         <h3>패션스퀘어 카테고리</h3>
-        <button type="button" className="button__close" onClick={closeLayer}>
+        <button type="button" className="button__close" onClick={()=>closeLayer(false)}>
           <span className="for-a11y">닫기</span>
         </button>
       </div>
