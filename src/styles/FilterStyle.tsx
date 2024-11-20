@@ -114,9 +114,9 @@ export const CategoryFilterWrap = styled.div`
   }
 `;
 
-export const Layer = styled.div<{ name: string }>`
+export const Layer = styled.div<{ $name: string }>`
   position: fixed;
-  top: ${(props) => (props.name === "category" ? "48px" : 0)};
+  top: ${(props) => (props.$name === "category" ? "48px" : 0)};
   left: 0;
   width: 100%;
   height: 100%;
@@ -171,6 +171,61 @@ export const Layer = styled.div<{ name: string }>`
   }
 `;
 
-export const SortFilter = styled.div`
+export const CheckBoxFilter=styled.span`
+  input[type='checkbox']{
+    appearance: none;
+    -webkit-appearance: none;
+    &:checked + .text__label{
+      color:#5855e2;
+      &:before{
+        background-color:#5855e2;
+      }
+    }
+  }
+  .text__label{
+    position: relative;
+    padding-left: 28px;
+    font-size: 14px;
+    color: #2c2c2c;
+    line-height: 20px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: calc(50% - 10px);
+      left: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #bdbdbd;
+      border-radius: 4px;
+    }
+  }
+`
 
+export const SortFilterWrap = styled.div`
+  .box__inner{
+    position: relative;
+    height: 56px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+  }
+  ${CheckBoxFilter}{
+    line-height:36px;
+    &:not(:first-child){
+      margin-left: 16px;
+    }
+  }
+  .button__filter{
+    position: absolute;
+    top: calc(50% - 18px);
+    right: 16px;
+    display: block;
+    height: 36px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 32px;
+    background: #5855e2;
+    border-radius: 8px;
+  }
 `;

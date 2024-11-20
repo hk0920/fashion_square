@@ -2,7 +2,7 @@ import React from "react";
 import { CategoryFilterWrap, FilterList } from "../../../styles/FilterStyle";
 import CategoryLayer from "./CategoryLayer";
 
-interface CategoryType {
+export interface CategoryType {
   categoryNo: string;
   categoryName: string;
   categoryImageUrl: string;
@@ -10,7 +10,7 @@ interface CategoryType {
   isNew: boolean;
 }
 
-interface FilterDataType {
+export interface FilterDataType {
   title: string;
   categories: CategoryType[];
   currentcategoryNo: string;
@@ -18,23 +18,22 @@ interface FilterDataType {
   isCategoryLayerVisible: boolean;
 }
 
-interface categoryIndexType {
+export interface categoryIndexType {
   oneDepth: number,
   twoDepth: number
 }
 
-interface FilterProps {
+export interface CategoryItemProps {
+  data: CategoryType[];
+  categoryControl: Function;
+  selectNo?: string;
+}
+export interface CategoryFilterProps {
   data: FilterDataType;
   categoryControl:Function,
   categoryLayerControl:Function
   isCategoryLayer:boolean
   categoryIndex:categoryIndexType
-}
-
-interface CategoryItemProps {
-  data: CategoryType[];
-  categoryControl: Function;
-  selectNo?: string;
 }
 
 const RenderList = ({ data , categoryControl, selectNo}: CategoryItemProps) => {
@@ -66,7 +65,7 @@ const RenderList = ({ data , categoryControl, selectNo}: CategoryItemProps) => {
   );
 };
 
-const CategoryFilter =({data,categoryControl, categoryLayerControl, isCategoryLayer, categoryIndex}: FilterProps)=>{
+const CategoryFilter =({data , categoryControl, categoryLayerControl, isCategoryLayer, categoryIndex}: CategoryFilterProps)=>{
   const {
     title,
     categories,

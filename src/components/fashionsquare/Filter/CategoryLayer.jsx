@@ -3,7 +3,7 @@ import { FilterList, Layer } from "../../../styles/FilterStyle";
 
 const CategoryLayer = ({ categoriesList, closeLayer }) => {
   return (
-    <Layer name={"category"}>
+    <Layer $name={"category"}>
       <div className="box__layer-head">
         <h3>패션스퀘어 카테고리</h3>
         <button type="button" className="button__close" onClick={()=>closeLayer(false)}>
