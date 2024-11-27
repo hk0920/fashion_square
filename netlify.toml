@@ -1,0 +1,11 @@
+[build]
+  # 배포 디렉토리 설정
+  publish = "dist"
+  # 빌드 명령어 (예: React, Vue 같은 빌드 시스템에서 사용)
+  command = "npm run build"
+
+[[redirects]]
+  # SPA 설정 (React, Vue 같은 프레임워크에서 사용)
+  from = "/*"
+  to = "/index.html"
+  status = 200
