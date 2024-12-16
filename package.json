@@ -32,9 +32,16 @@
       "react-app/jest"
     ],
     "rules": {
-      "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off"
-    }
+      "no-unused-vars": "warn"
+    },
+    "overrides": [
+      {
+        "files": ["**/*.ts?(x)"],
+        "rules": {
+          "max-len": "warn"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
