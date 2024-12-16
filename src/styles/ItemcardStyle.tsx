@@ -115,8 +115,9 @@ export const ScoreElement = styled.div`
       background-color: #bdbdbd;
     }
   }
-}
-`
+`;
+
+
 export const LmoTag = styled.span<{ lmoType: string }>`
   display: inline-block;
   max-width: 100%;
@@ -192,7 +193,7 @@ export const ItemCardWrap = styled.div`
     &:nth-child(-n+2){
       border-top: 0;
     }
-		@media all and ${theme.device.mobile}{
+		@media all and (${theme.device.tablet}){
       width: 25%;
     }
   }
