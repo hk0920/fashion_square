@@ -1,6 +1,7 @@
 import React from "react";
 import { CategoryFilterWrap, FilterList } from "../../../styles/FilterStyle";
 import CategoryLayer from "./CategoryLayer";
+import classNames from "classnames";
 
 export interface CategoryType {
   categoryNo: string;
@@ -24,8 +25,10 @@ export interface categoryIndexType {
 }
 
 export interface CategoryItemProps {
+  depth: number;
   data: CategoryType[];
   categoryControl: Function;
+  selectedIndex?: number;
   selectNo?: string;
 }
 export interface CategoryFilterProps {
@@ -36,7 +39,13 @@ export interface CategoryFilterProps {
   categoryIndex: categoryIndexType;
 }
 
-const RenderList = ({ data, categoryControl, selectNo }: CategoryItemProps) => {
+const RenderList = ({
+  depth,
+  data,
+  categoryControl,
+  selectedIndex,
+  selectNo,
+}: CategoryItemProps) => {
   return (
     <>
       {data.map((item: any, idx: number) => {
@@ -52,8 +61,11 @@ const RenderList = ({ data, categoryControl, selectNo }: CategoryItemProps) => {
           <li className="list-item" key={`category-${categoryNo}`}>
             <a
               href="#"
-              className="link__category"
-              onClick={() => categoryControl(0, 1)}
+              className={classNames(
+                "link__category",
+                selectedIndex === idx && "link__category--acive"
+              )}
+              onClick={() => categoryControl(depth - 1, idx)}
             >
               {categoryImageUrl && (
                 <span className="box__thumbnail">
@@ -83,6 +95,7 @@ const CategoryFilter = ({
     subCategories,
     isCategoryLayerVisible,
   } = data || {};
+
   return (
     <CategoryFilterWrap role="navigation">
       <h3 className="for-a11y">{title}</h3>
@@ -98,8 +111,10 @@ const CategoryFilter = ({
           </button>
           <FilterList depth={1}>
             <RenderList
+              depth={1}
               data={categories}
               categoryControl={categoryControl}
+              selectedIndex={categoryIndex.oneDepth}
               selectNo={currentcategoryNo}
             />
           </FilterList>
@@ -108,6 +123,7 @@ const CategoryFilter = ({
           {categories[categoryIndex.oneDepth].subCategories.length > 0 && (
             <FilterList depth={2}>
               <RenderList
+                depth={2}
                 data={categories[categoryIndex.oneDepth].subCategories}
                 categoryControl={categoryControl}
               />
@@ -117,6 +133,7 @@ const CategoryFilter = ({
       </div>
       {isCategoryLayer && (
         <CategoryLayer
+          selectedIndex={categoryIndex.oneDepth}
           categoriesList={categories}
           closeLayer={categoryLayerControl}
         />

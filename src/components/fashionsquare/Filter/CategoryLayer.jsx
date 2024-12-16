@@ -1,7 +1,8 @@
 import React from "react";
 import { FilterList, Layer } from "../../../styles/FilterStyle";
+import classNames from "classnames";
 
-const CategoryLayer = ({ categoriesList, closeLayer }) => {
+const CategoryLayer = ({ categoriesList, closeLayer, selectedIndex }) => {
   return (
     <Layer $name={"category"}>
       <div className="box__layer-head">
@@ -27,7 +28,13 @@ const CategoryLayer = ({ categoriesList, closeLayer }) => {
               isNew,
             } = item || {};
             return (
-              <li className="list-item" key={`category-${categoryNo}`}>
+              <li
+                className={classNames(
+                  "list-item",
+                  selectedIndex === idx && "list-item--active"
+                )}
+                key={`category-${categoryNo}`}
+              >
                 <a href="#" className="link__category">
                   {categoryImageUrl && (
                     <span className="box__thumbnail">

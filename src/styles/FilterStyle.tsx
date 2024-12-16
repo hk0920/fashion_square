@@ -51,6 +51,11 @@ export const FilterList = styled.ul<{ depth: number }>`
     padding: ${(props) => (props.depth === 1 ? "15px 0" : "0 8px")};
     text-align: ${(props) => props.depth === 1 && "center"};
     line-height: ${(props) => (props.depth === 1 ? 1 : "34px")};
+    &.link__category--acive {
+      .box__thumbnail {
+        border: 2px solid #5855e2;
+      }
+    }
   }
   .box__thumbnail {
     display: block;
@@ -155,6 +160,11 @@ export const Layer = styled.div<{ $name: string }>`
       padding-right: 10px;
       &:nth-child(3n) {
         padding-right: 0;
+      }
+      &.list-item--active {
+        .box__thumbnail {
+          border: 2px solid #5855e2;
+        }
       }
       @media all and (${theme.device.mobile}) {
         width: 50%;

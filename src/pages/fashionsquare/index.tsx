@@ -17,7 +17,9 @@ const FashionSquarePage = () => {
       <Header data={dummyData.Header} />
       <Tabs tabType={tabType} tabControl={tabControl} />
       <Filter data={dummyData.Filter} tabType={tabType} />
-      <ItemCardContainer data={dummyData.ItemCard} />
+      {tabType === "category" && (
+        <ItemCardContainer data={dummyData.ItemCard} />
+      )}
     </>
   );
 };

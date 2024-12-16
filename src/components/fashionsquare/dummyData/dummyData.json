@@ -428,8 +428,8 @@
     },
     "middleCategory": null
   },
-  "Filter":{
-    "categoryfilter":{
+  "Filter": {
+    "categoryfilter": {
       "categories": [
         {
           "categoryNo": "100000000",
@@ -1052,23 +1052,39 @@
         }
       ],
       "isCategoryLayerVisible": false,
-      "title":"카테고리"
+      "title": "카테고리"
     },
-    "quickfilter":{
-      "sorts":[
+    "quickfilter": {
+      "sorts": [
         {
-          "isSelected":false, 
-          "text" :"신상품", 
-          "name" :"sorts",
-          "code" : "new"
+          "isSelected": false,
+          "text": "신상품",
+          "name": "sorts",
+          "code": "new"
         },
         {
-          "isSelected":false, 
-          "text" :"무료배송", 
-          "name" :"sorts",
-          "code" : "free"
+          "isSelected": false,
+          "text": "무료배송",
+          "name": "sorts",
+          "code": "free"
+        }
+      ]
+    },
+    "brandFilter": {
+      "tabs": [
+        {
+          "isSelected": true,
+          "items": "ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ",
+          "lang": "ko",
+          "tabName": "가나다"
+        },
+        {
+          "isSelected": false,
+          "items": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+          "lang": "en",
+          "tabName": "ABC"
         }
       ]
     }
-  } 
+  }
 }

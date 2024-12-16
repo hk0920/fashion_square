@@ -50,14 +50,31 @@ const engCode = [
 interface AlphabetCode {
   data: string[];
 }
-
-const SubTabs = () => {
+interface subTabsProps {
+  controler: Function;
+  selectedLang: string;
+}
+const SubTabs = ({ controler, selectedLang }: subTabsProps) => {
   return (
     <SubTab>
-      <button type="button" className="button__tab button__tab--selected">
+      <button
+        type="button"
+        className={classNames(
+          "button__tab",
+          selectedLang === "ko" && "button__tab--selected"
+        )}
+        onClick={() => controler()}
+      >
         가나다
       </button>
-      <button type="button" className="button__tab">
+      <button
+        type="button"
+        className={classNames(
+          "button__tab",
+          selectedLang === "en" && "button__tab--selected"
+        )}
+        onClick={() => controler()}
+      >
         ABC
       </button>
     </SubTab>
@@ -89,14 +106,30 @@ const AlphabetFilter = ({ data }: AlphabetCode) => {
   );
 };
 
+const BrandList = () => {
+  return (
+    <div className="box__brand-info">
+      <ul className="list__brand">
+        <li className="list-item">갤러리아 클락</li>
+      </ul>
+    </div>
+  );
+};
+
 const BrandFilter = () => {
   const [lang, setLang] = useState("ko");
-  const [codeList, setCodeList] = useState(korCode);
+  const [codeList, setCodeList] = useState(lang === "ko" ? korCode : engCode);
+
+  const subTabControl = () => {
+    setLang(lang === "ko" ? "en" : "ko");
+    setCodeList(lang === "ko" ? engCode : korCode);
+  };
 
   return (
     <>
-      <SubTabs />
+      <SubTabs controler={subTabControl} selectedLang={lang} />
       <AlphabetFilter data={codeList} />
+      {/* <BrandList /> */}
     </>
   );
 };
